@@ -1,0 +1,24 @@
+{
+  "name": "online-mgr",
+  "version": "0.0.1",
+  "description": "distributed service online-mgr use redis set",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luckyqqk/online-mgr.git"
+  },
+  "keywords": [
+    "online",
+    "mgr",
+    "users"
+  ],
+  "author": "luckyqqk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luckyqqk/online-mgr/issues"
+  },
+  "homepage": "https://github.com/luckyqqk/online-mgr#readme"
+}
