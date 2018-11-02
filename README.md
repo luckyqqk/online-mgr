@@ -22,53 +22,49 @@ distributed service online-mgr use redis set
 基本能适用绝大多数的在线管理需求.
 如果需要用redis做几日存留的计算统计,可自行扩展该插件,或在该插件外部自行处理.
 
+### 安装
+npm i online-mgr --save
+
 ### 支持方法
 #### 新增在线
-/**
- * @param sid   connId
- * @param uid   userId
- * @returns {Promise}
- */
+```
+@param sid   connId
+@param uid   userId
 addOnlineUser(sid, uid)
+```
 
  #### 删除在线
-/**
- * @param sid   connId
- * @param uid   userId
- * @returns {Promise}
- */
- remOnlineUser(sid, uid)
+```
+@param sid   connId
+@param uid   userId
+remOnlineUser(sid, uid)
+```
  
  #### 获得在线用户列表
-/**
- * @param sid   connId
- * @returns {Promise}
- */
+```
+@param sid   connId
 getOnlineUsers(sid)
+```
 
  #### 获得在线用户数量
-/**
- * @param sid   connId
- * @returns {Promise}
- */
+```
+@param sid   connId
 getOnlineNum(sid)
+```
 
  #### 检测是否在线
-/**
- * @param uid
- * @returns {Promise}
- */
+```
+@param uid
 isOnline(uid)
+```
 
  #### 获得玩家所在的通讯服id
-/**
- * @param uid
- * @returns {Promise}
- */
+```
+@param uid
 getSidByUid(uid)
+```
 
  #### 清空在线记录
-/**
- * @returns {Promise}
- */
+```
 cleanOnlineUsers()
+```
